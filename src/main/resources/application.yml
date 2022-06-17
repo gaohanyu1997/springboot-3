@@ -1,17 +1,24 @@
+# 手动开启表单rest功能
 spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
   web:
     resources:
-      cache:
-        period: 99 # 默认以秒为单位
-# 改变静态资源访问前缀
-#spring:
+      static-locations: [classpath:/haha/]
+  # 改变静态资源访问前缀
 #  mvc:
 #    static-path-pattern: /res/**  # 这个会导致favicon.ico功能失效
-  # 改变静态资源路径
-#  web:
-#    resources:
-#      static-locations: [classpath:/haha/]
+#   改变静态资源路径
+
 #spring:
 #  web:
 #    resources:
 #      add-mappings: false # 禁用静态资源 默认为true(不禁用)
+
+#spring:
+#  web:
+#    resources:
+#      cache:
+#        period: 99 # 默认以秒为单位
