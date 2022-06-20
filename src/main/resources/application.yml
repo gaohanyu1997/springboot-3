@@ -1,7 +1,10 @@
-spring:
-  mvc:
-    contentnegotiation:
-      favor-parameter: true   # 开启参数方式的内容协商 默认为false
+server:
+  servlet:
+    context-path: /world  # 所有的请求都必须以 /world 开始
+#spring:
+#  mvc:
+#    contentnegotiation:
+#      favor-parameter: true   # 开启参数方式的内容协商 默认为false
 
 # 手动开启表单rest功能
 #spring:
